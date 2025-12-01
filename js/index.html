@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" href="assets/fargonee-icon.svg" type="image/svg+xml">
+  <title>Instagram Banner | FarGonE</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <!-- Header with Branding -->
+    <header class="header">
+      <div class="brand">
+        <img src="assets/fargonee-logo.jpg" alt="FarGonE" class="logo-main">
+        <h1>FarGonE</h1>
+      </div>
+      <div class="dev-credit">
+        <span>by <b>BITHERD</b></span>
+        <img src="assets/bitherd-logo.png" alt="BITHERD" class="logo-dev">
+      </div>
+    </header>
+
+    <p class="tagline">Split any horizontal photo into 3 perfect Instagram parts — instantly.</p>
+
+    <div id="dropzone">
+        <div class="drop-text">
+          <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M4 14.899L12 6.999l8 7.9M12 6.999v14"/>
+            <circle cx="12" cy="19" r="2"/>
+          </svg>
+          <p>Drop your image here or click to browse</p>
+        </div>
+        <input type="file" accept="image/*" id="file-input" />
+      </div>
+
+
+    <div id="preview" class="hidden">
+      <div class="options-bar">
+        <div class="mode-buttons">
+          <button data-mode="free" class="active">Free Split</button>
+          <button data-mode="grid">Grid 3:4 (1080×1440)</button>
+          <button data-mode="square">Square</button>
+        </div>
+        <label class="png-toggle">
+          <input type="checkbox" id="png-mode"> Save as PNG (100% lossless)
+        </label>
+      </div>
+
+      <div id="result"></div>
+      <button id="download-all" class="download-btn">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+          <polyline points="7 10 12 15 17 10"/>
+          <line x1="12" y1="15" x2="12" y2="3"/>
+        </svg>
+        Download All as ZIP
+      </button>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>© 2025 FarGonE • Crafted with <span class="heart">♥</span> by <strong>BITHERD</strong></p>
+  </footer>
+
+  <script src="jpeg.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
