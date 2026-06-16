@@ -1,4 +1,3 @@
-// script.js — FINAL WORKING VERSION for FarGonE Instagram 3-Split Tool
 let originalImage = null;
 let usePNG = false;
 

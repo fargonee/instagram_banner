@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 Instagram 3-split banner generator
 - free_split   → exact 1/3 cuts (no resize)
